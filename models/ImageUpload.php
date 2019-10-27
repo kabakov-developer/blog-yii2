@@ -1,6 +1,7 @@
 <?php
 
 	namespace app\models;
+
 	use Yii;
 	use yii\base\Model;
 	use yii\web\UploadedFile;
@@ -10,7 +11,7 @@
 
 		public function uploadFile(UploadedFile $file)
 		{
-			$file->saveAs(Yii::getAlias('@web'), 'uploads/', $file->name);
+			$file->saveAs(Yii::getAlias('@web'), 'uploads/'. $file->name);
 		}
 	}
 
