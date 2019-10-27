@@ -2,7 +2,7 @@
 
 namespace app\modules\admin\controllers;
 use app\models\ImageUpload;
-// use yii\web\UploadedFile;
+use yii\web\UploadedFile;
 
 use Yii;
 use app\models\Article;
